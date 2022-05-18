@@ -32,16 +32,16 @@ function Header() {
         />
 
         <ul className="hidden space-x-4 md:flex">
-          <li className="headerLink">Home</li>
-          <li className="headerLink">TV Shows</li>
-          <li className="headerLink">Movies</li>
-          <li className="headerLink">New & Popular</li>
-          <li className="headerLink">My List</li>
+          <li className="headerLink">홈</li>
+          <li className="headerLink">시리즈</li>
+          <li className="headerLink">영화</li>
+          <li className="headerLink">New! 요즘 대세 콘텐츠</li>
+          <li className="headerLink">내가 찜한 콘텐츠</li>
         </ul>
       </div>
       <div className="flex items-center space-x-4 text-sm font-light">
         <SearchIcon className="hidden h-6 w-6 sm:inline" />
-        <p className="hidden lg:inline">Kids</p>
+        <p className="hidden lg:inline">키즈</p>
         <BellIcon className="h-6 w-6" />
         <Link href="/account">
           <img
