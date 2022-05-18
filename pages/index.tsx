@@ -33,7 +33,7 @@ const Home = ({
       </Head>
 
       <Header />
-      <main>
+      <main className="lg:space-y-25 relative pl-4 pb-24 lg:pl-16">
         <Banner netflixOriginals={netflixOriginals} />
         <section>
           {/* Row */}
