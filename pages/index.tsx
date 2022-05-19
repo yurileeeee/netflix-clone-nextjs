@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import { listenerCount } from 'process'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import Row from '../components/Row'
 import { Movie } from '../typings'
 import requests from '../utils/requests'
 
@@ -36,11 +38,14 @@ const Home = ({
       <main className="lg:space-y-25 relative pl-4 pb-24 lg:pl-16">
         <Banner netflixOriginals={netflixOriginals} />
         <section>
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
+          <Row title="지금 뜨는 콘텐츠" movies={trendingNow} />
+          <Row title="Top Rated" movies={topRated} />
+          <Row title="액션 스릴러" movies={actionMovies} />
+          {/* My List */}
+          <Row title="코미디" movies={comedyMovies} />
+          <Row title="공포 영화" movies={horrorMovies} />
+          <Row title="로맨스 영화" movies={romanceMovies} />
+          <Row title="다큐멘터리" movies={documentaries} />
         </section>
       </main>
       {/* Modal */}
