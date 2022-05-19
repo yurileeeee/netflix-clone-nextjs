@@ -37,7 +37,7 @@ const Home = ({
       <Header />
       <main className="lg:space-y-25 relative pl-4 pb-24 lg:pl-16">
         <Banner netflixOriginals={netflixOriginals} />
-        <section>
+        <section className="md:space-y-24">
           <Row title="지금 뜨는 콘텐츠" movies={trendingNow} />
           <Row title="Top Rated" movies={topRated} />
           <Row title="액션 스릴러" movies={actionMovies} />
